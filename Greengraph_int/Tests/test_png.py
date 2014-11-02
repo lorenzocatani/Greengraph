@@ -1,6 +1,5 @@
-from ..url import geolocate
+from ..png import is_green
 from nose.tools import assert_equal
-from mock import Mock
 
 def test_geolocate():
   """ Test is_green"""

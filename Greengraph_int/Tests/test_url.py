@@ -1,6 +1,6 @@
 from ..url import geolocate, map_at
 from nose.tools import assert_equal
-from mock import Mock
+
 
 def test_geolocate():
   """ Test geolocate""" 
