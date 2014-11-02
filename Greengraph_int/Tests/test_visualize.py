@@ -1,11 +1,11 @@
-from ..method2 import functionB
+from ..url import geolocate
 from nose.tools import assert_equal
 from mock import Mock
 
-def test_functionA():
-  """ Test something"""
+def test_geolocate():
+  """ Test geolocate"""
   # Test something
   #f = Mock(name="myroutine", return_value=2) 
-  actual=functionB(2)
-  expected=4
-  assert_equal(expected,actual)
+  london_location=geolocate("London")
+  expected=(51.5073509, -0.1277583)
+  assert_equal(expected,london_location)
