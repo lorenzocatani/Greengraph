@@ -3,7 +3,7 @@ geocoder=geopy.geocoders.GoogleV3(domain="maps.google.co.uk")
 
 import requests
 from url import map_at, geolocate
-from png import count_green_in_png
+from picturepng import count_green_in_png, is_green
 
 import png
 from itertools import izip

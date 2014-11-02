@@ -1,4 +1,4 @@
-from ..png import is_green
+from ..picturepng import is_green
 from nose.tools import assert_equal
 
 def test_geolocate():
