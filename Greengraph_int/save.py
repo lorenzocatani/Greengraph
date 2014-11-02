@@ -2,7 +2,7 @@ import geopy
 geocoder=geopy.geocoders.GoogleV3(domain="maps.google.co.uk")
 
 import requests
-from url import map_at, london_location
+from url import map_at
 
 import png
 from itertools import izip
@@ -10,6 +10,8 @@ from itertools import izip
 from StringIO import StringIO
 
 from numpy import linspace
+
+from visualize import show_green_in_png
 
 ### "save"
 import matplotlib

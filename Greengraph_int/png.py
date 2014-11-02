@@ -4,7 +4,7 @@ import geopy
 geocoder=geopy.geocoders.GoogleV3(domain="maps.google.co.uk")
 
 import requests
-from url import map_at, london_location
+from url import map_at
 
 ### "png"
 
@@ -24,4 +24,3 @@ def count_green_in_png(data):
     return count
 
 from StringIO import StringIO
-print count_green_in_png(map_at(*london_location))
